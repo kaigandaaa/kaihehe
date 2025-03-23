@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <style>
+        /* Background Style */
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: "Arial", sans-serif;
+        }
+
+        /* Title */
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 5px hotpink;
+        }
+
+        /* Message */
+        p {
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Image Styling */
+        img {
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" autoplay loop>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Image -->
+    <img src="your-image.jpg" alt="Hello Kitty">
+
+    <!-- Cute Message -->
+    <h1>Happy 2nd Monthsary, My Love! 🎀</h1>
+    <p>You are the cutest, sweetest, and most amazing person in my life! 🩷</p>
+
+    <script>
+        // Autoplay fix for some browsers
+        window.addEventListener('DOMContentLoaded', () => {
+            let audio = document.getElementById('bg-music');
+            audio.play().catch(() => {
+                console.log("Autoplay blocked. User interaction required.");
+            });
+        });
+    </script>
+</body>
+</html>
